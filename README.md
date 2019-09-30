@@ -1,6 +1,6 @@
-# LES
+# LES (laboratório de engenharia de software)
 
-## Gestao de Pratica Diarias
+## Gestao de Pratica Diarias (web application for educational purposes)
 
 ### Used tool
 
