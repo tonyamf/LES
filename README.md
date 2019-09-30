@@ -9,4 +9,11 @@
  - Html
  - Javascript
  
+ 
+You can also add images with simple HTML tags:
+
+<p align="center">
+  <img src="(https://github.com/tonyamf/LES/tree/master)" width="350" title="hover text">
+</p>
+ 
 ![alt text](https://github.com/tonyamf/LES/tree/master)
