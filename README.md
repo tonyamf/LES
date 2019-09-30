@@ -16,4 +16,4 @@ You can also add images with simple HTML tags:
   <img src="(https://github.com/tonyamf/LES/tree/master)" width="350" title="hover text">
 </p>
  
-![alt text](https://github.com/tonyamf/LES/tree/master)
+![myimage-alt-tag](https://github.com/tonyamf/LES/tree/master)
