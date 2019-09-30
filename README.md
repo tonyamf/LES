@@ -17,3 +17,6 @@ You can also add images with simple HTML tags:
 </p>
  
 ![myimage-alt-tag](https://github.com/tonyamf/LES/tree/master/LES.png)
+
+![alt text](https://raw.githubusercontent.com/tonyamf/LES/master/LES.png)
+
