@@ -1,0 +1,5 @@
+# What the project was written against in 2019 (Python 3.7, Django 2.1.7).
+# Verified to start on Python 3.8 with these versions, using the code BEFORE the
+# 'hubrefine/fix' branch (that branch adds 'crispy_bootstrap4', which is not needed here).
+Django==2.1.7
+django-crispy-forms==1.14.0

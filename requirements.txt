@@ -1,0 +1,4 @@
+# Verified on Python 3.12 (Django 5.2 LTS supports 3.10-3.13)
+Django==5.2.18
+django-crispy-forms==2.7
+crispy-bootstrap4==2026.2
