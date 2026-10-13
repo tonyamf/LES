@@ -1,0 +1,6 @@
+[
+  {"model": "Activities.verb", "pk": 1, "fields": {"verbname": "escrever", "verbtype": "Produtivo"}},
+  {"model": "Activities.verb", "pk": 2, "fields": {"verbname": "telefonar", "verbtype": "Comunicativo"}},
+  {"model": "Activities.resource", "pk": 1, "fields": {"resourcename": "portatil", "datecreated": "2019-03-01"}},
+  {"model": "Activities.artefact", "pk": 1, "fields": {"artefactname": "relatorio", "datecreated": "2019-03-01"}}
+]
