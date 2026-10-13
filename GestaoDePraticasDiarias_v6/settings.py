@@ -20,7 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'l9wr-0u2c*j=4m02e^250cng$0ne(v529!h55q5jt#i4#rl+t('
+# The original development key is kept as the default so the project still starts;
+# set DJANGO_SECRET_KEY to override it (and do so for anything that is not local).
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'l9wr-0u2c*j=4m02e^250cng$0ne(v529!h55q5jt#i4#rl+t(')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -115,8 +118,6 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 
 USE_I18N = True
-
-USE_L10N = True
 
 USE_TZ = True
 

@@ -13,6 +13,11 @@ from django.contrib.admin.widgets import AdminDateWidget
 # Create your views here.
 
 
+def is_ajax(request):
+    # HttpRequest.is_ajax() was removed in Django 4.0; this is its old implementation.
+    return request.headers.get('x-requested-with') == 'XMLHttpRequest'
+
+
 class AjaxableResponseMixin(object):
     
     """
@@ -21,7 +26,7 @@ class AjaxableResponseMixin(object):
     """
     def form_invalid(self, form):
         response = super(AjaxableResponseMixin, self).form_invalid(form)
-        if self.request.is_ajax():
+        if is_ajax(self.request):
             return JsonResponse(form.errors, status=400)
         else:
             return response
@@ -32,7 +37,7 @@ class AjaxableResponseMixin(object):
             messages.success(self.request,f"a")
         elif(self.request.path[1:7] == 'update'):
             messages.info(self.request,f"a")
-        if self.request.is_ajax():
+        if is_ajax(self.request):
             print(self.request.path)
             if(self.request.path == '/create_group/'):
                 data = { 'local': 'groups/', 'pk': self.object.pk,}
